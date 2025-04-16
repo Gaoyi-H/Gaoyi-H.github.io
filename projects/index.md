@@ -11,6 +11,8 @@ This heatmap visualizes Bigfoot sightings aggregated by U.S. state and season. E
 
 To generate this chart, I grouped the dataset using `groupby(['state', 'season'])` in pandas to calculate the total number of sightings for each combination. This transformation simplified the data and allowed us to focus on aggregated patterns rather than individual sightings.
 
+<div id="heatmap" style="margin-top: 30px;"></div>
+
 ---
 
 ## Interactive Map: Sightings by Classification
@@ -19,9 +21,7 @@ This interactive map displays individual Bigfoot sightings based on their geogra
 
 To enable interactivity, I used `alt.param()` and `binding_select()` to create a dropdown menu, allowing users to filter sightings by classification. This adds a layer of user engagement and makes it easier to analyze spatial differences between report types. Data was filtered using pandas to remove missing coordinates and keep only the relevant classification categories.
 
+<div id="mapchart" style="margin-top: 30px;"></div>
+
 ---
-
-## Interactivity
-
-The interactive map includes a classification filter implemented through a dropdown menu, enabling the user to focus on specific types of sightings. This interactivity improves clarity by decluttering the map and allowing users to explore specific categories individually. It also highlights regional patterns within each classification that may otherwise be obscured in a full dataset.
 
