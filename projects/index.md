@@ -25,3 +25,10 @@ To enable interactivity, I used `alt.param()` and `binding_select()` to create a
 
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script>
+  vegaEmbed('#heatmap', 'heatmap.json');
+  vegaEmbed('#mapchart', 'interactive_map.json');
+</script>
